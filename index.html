@@ -10,16 +10,15 @@
     <title>Olivier Scholl</title>
 
     <style>
-      body {
+      body, html {
         height: 100%;
         margin: 0;
         font-family: 'Inter', sans-serif;
-        color: #fff
+        color: #000
       }
 
       .bgimg-1, .bgimg-2 {
         position: relative;
-        opacity: 0.75;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -154,6 +153,12 @@
         left: 0 !important;
       }
 
+      @media only screen and (max-device-width: 1366px) {
+        .parallax {
+          background-attachment: scroll;
+        }
+      }
+
     </style>
 
   </head>
@@ -200,9 +205,7 @@
     </div>
     <div class="bgimg-2"></div>
       <div class="title">
-        <span class="text">Discipline is the bridge between</span>
-        <span class="text">goals and accomplishments.</span>
-        <span class="text"><i>- Jim Rohn</i></span>
+        <span class="text">Discipline is the bridge between goals and accomplishments.<i>- Jim Rohn</i></span>
       </div>
   </body>
 </html>
