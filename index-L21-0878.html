@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KT17FSZB4Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-KT17FSZB4Y');
+    </script>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Scholl, Olivier">
+    <meta name="google-site-verification" content="gUjepAf3A5LeDwGeaZb83d6MwE4uFqbcwW69T0biQsw" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Olivier Scholl</title>
+
+    <style>
+      body, html {
+        height: 100%;
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        color: #000
+      }
+
+      .bgimg-1, .bgimg-2 {
+        position: relative;
+        opacity: 0.85;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .bgimg-1 {
+        background-image: url("keeper-of-the-plains.jpg");
+        min-height: 100%;
+      }
+
+      .bgimg-2 {
+        background-image: url("babson-campus.jpg");
+        min-height: 100%;
+      }
+
+      .title {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #160D08;
+      }
+
+      .title span.text_name {
+        padding: 20px;
+        background-color:#002147;
+        color:#fff;
+        font-size: 40px;
+        letter-spacing: 10px;
+      }
+      .title span.text_quote {
+        padding: 20px;
+        background-color:#f3f3f3;
+        color:#160D08;
+        font-size: 25px;
+        line-height:50px;
+        letter-spacing: 3.5px;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 600px;
+      }
+
+      img {
+       max-width: 100%;
+     }
+
+     .image {
+       flex-basis: 100%;
+       width: auto;
+       height: auto;
+     }
+
+     .personal_photo {
+       width: 325px;
+     }
+
+     .paragraph {
+       font-size: 20px;
+       padding-left: 20px;
+     }
+
+  /** Hamburger **/
+      .menu__btn {
+        position: absolute;
+        top: 40px;
+        left: 25px;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        z-index: 1;
+      }
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 1.5px;
+        background-color: #160D08;
+        transition-duration: .5s;
+      }
+      .menu__btn > span::before {
+        content: '';
+        top: -8px;
+      }
+      .menu__btn > span::after {
+        content: '';
+        top: 8px;
+      }
+      .menu__box {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 200px;
+        height: 350px;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        background-color: #f7f7f7;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+        transition-duration: .5s;
+      }
+      .menu__item {
+        display: block;
+        padding: 25px 25px;
+        color: #160D08;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        font-weight: 650;
+        text-decoration: none;
+        transition-duration: .5s;
+      }
+      .menu__item:hover {
+        background-color: #CFD8DC;
+      }
+
+  /** Animations **/
+      #menu__toggle {
+        opacity: 0;
+      }
+      #menu__toggle:checked + .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      #menu__toggle:checked + .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0deg);
+      }
+      #menu__toggle:checked + .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu__box {
+        left: 0 !important;
+      }
+
+      @media only screen and (max-device-width: 1366px) {
+        .parallax {
+          background-attachment: scroll;
+        }
+      }
+
+    </style>
+
+  <body>
+    <div class="bgimg-1">
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu__box">
+          <li><a class="menu__item" href=index>Home</a></li>
+          <li><a class="menu__item" href=resume>Resume</a></li>
+          <li>
+            <a class="menu__item" href="https://www.linkedin.com/in/olivierscholl" target="_blank" rel="noopener noreferrer">
+              <img src="linkedin-logo.jpg" alt="linkedin-logo.img" style="width:50px;height:50px;">
+            </a>
+          </li>
+          <li>
+            <a class="menu__item" href="https://www.babsonathletics.com/sports/m-swim/2021-22/bios/scholl_olivier_5chw?view=bio" target="_blank" rel="noopener noreferrer">
+              <img src="babson-logo.jpg" alt="babson-logo.img" style="width:50px;height:50px;">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="title">
+        <span class="text_name">OLIVIER SCHOLL</span>
+      </div>
+    </div>
+    <div class="container" style="background-color:#d9c09e">
+      <div class="image" style="justify-content: center;">
+        <img class="personal_photo" src="personal-photo.jpg" alt="Olivier-Scholl.img">
+      </div>
+      <div style="background-color:#f3f3f3;color:#6a6a6a;text-align:center;height:auto;max-width:600px;padding:30px 30px;text-align:justify;line-height:27px;">
+        <h2 style="letter-spacing:5px;text-transform:uppercase;font:30px;color:#160D08;text-align:center;">ABOUT ME</h2>
+        <div>
+          <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
+        </div>
+      </div>
+    </div>
+    <div class="bgimg-2">
+      <div class="title">
+        <span class="text_quote">Discipline is the bridge between<br></span>
+        <span class="text_quote">goals and accomplishments.<br></span>
+        <span class="text_quote">- <i>Jim Rohn</i></span>
+      </div>
+    </div>
+  </body>
+</html>
